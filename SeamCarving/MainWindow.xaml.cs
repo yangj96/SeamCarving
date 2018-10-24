@@ -23,7 +23,7 @@ namespace SeamCarving
     public partial class MainWindow : Window
     {
         private BitmapImage inputImage;
-        private BitmapImage outputImage;
+        private BitmapSource outputImage;
 
         public MainWindow()
         {
