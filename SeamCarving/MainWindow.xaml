@@ -9,10 +9,10 @@
     <Grid>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="270" Margin="45,80,0,0" VerticalAlignment="Top" Width="720"/>
         <Button x:Name="button" Content="打开图片" HorizontalAlignment="Left" Margin="45,35,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="215" Margin="70,125,0,0" VerticalAlignment="Top" Width="290"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="220" Margin="70,125,0,0" VerticalAlignment="Top" Width="280"/>
         <Label x:Name="label1" Content="原图像" HorizontalAlignment="Left" Margin="45,80,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label2" Content="压缩图像" HorizontalAlignment="Left" Margin="405,80,0,0" VerticalAlignment="Top"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="215" Margin="460,125,0,0" VerticalAlignment="Top" Width="290"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="110" Margin="460,125,0,0" VerticalAlignment="Top" Width="140"/>
         <Button x:Name="button1" Content="压缩图片" HorizontalAlignment="Left" Margin="180,35,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
         <Button x:Name="button2" Content="保存结果" HorizontalAlignment="Left" Margin="330,35,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
     </Grid>

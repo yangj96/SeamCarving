@@ -67,8 +67,23 @@ namespace SeamCarving
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            ResizeImage resize = new ResizeImage();
-            outputImage = resize.halfResize(ref inputImage);
+            BitmapSource inputSource = (BitmapSource)inputImage;
+            int w = inputImage.PixelWidth;
+            int h = inputImage.PixelHeight;
+            for (int i = 0; i < w / 2; i++)
+            {
+                ResizeImage resize = new ResizeImage();
+                outputImage = resize.widthResize(ref inputSource);
+                inputSource = outputImage;
+            }
+            image1.Source = outputImage;
+            for (int i = 0; i < h / 2; i++)
+            {
+                ResizeImage resize = new ResizeImage();
+                outputImage = resize.heightResize(ref inputSource);
+                image1.Source = outputImage;
+                inputSource = outputImage;
+            }
             image1.Source = outputImage;
         }
 
